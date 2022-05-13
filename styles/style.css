@@ -1,0 +1,276 @@
+/* notatki */
+/* color miętowy - rgb(172, 206, 182, 255)
+
+
+pytania 
+1. jak odzielic od siebie <p> about-content -> WSADZIC W ODDZIELNE DIVY / INNE KLASY
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav {
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin-right: 70px;
+  margin-left: 70px;
+  padding: 0px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+}
+
+h1 {
+  font-family: "Playfair Display";
+  font-size: 155px;
+  font-style: cu;
+  font-weight: lighter;
+  margin: 0px;
+}
+
+.about-section {
+  font-family: "Mulish", sans-serif;
+}
+
+.about-section .container {
+  display: flex;
+}
+
+.about-section .about-img {
+  flex-basis: 35%;
+  padding: 50px;
+}
+.about-section .about-content {
+  flex-basis: 46%;
+  padding: 50px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.about-content a {
+  color: white;
+  background-color: rgb(172, 206, 182, 255);
+  border: solid rgb(172, 206, 182, 255);
+  width: 500px;
+  padding: 15px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.about-img {
+  position: relative;
+}
+
+.about-img::before {
+  content: " ";
+  display: block;
+  border: 4px solid rgb(172, 206, 182, 255);
+  width: 342px;
+  height: 470px;
+  margin: 0;
+  position: absolute;
+  top: 70px;
+  right: 31px;
+}
+
+.about-img::after {
+  content: "";
+  background-image: url(/planty-assets/img-mobile.png);
+  position: absolute;
+  top: 56px;
+  right: -60px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.quote-section {
+  background-image: url("/planty-assets/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+h2 {
+  color: #ffff;
+  height: 200px;
+  width: 960px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  font-family: "Playfair Display";
+  font-size: 35px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.experts-section .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.experts-section .experts-wrapper {
+  display: flex;
+}
+
+.experts-section .lidia {
+  flex-basis: 35%;
+  padding: 50px;
+}
+
+.experts-section .albert {
+  flex-basis: 35%;
+  padding: 50px;
+}
+
+.albert {
+  flex-basis: 35%;
+  padding: 50px;
+}
+
+h3 {
+  font-family: "Playfair Display";
+  font-size: 50px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.contact-section {
+  font-family: "Mulish", sans-serif;
+  font-size: small;
+}
+
+.contact-section .container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-section .contact-form {
+  flex-basis: 35%;
+}
+
+.contact-section .contact-img {
+  flex-basis: 35%;
+  padding: 50px;
+}
+
+.contact-img {
+  position: relative;
+}
+
+.contact-img::before {
+  display: block;
+  content: " ";
+  border: 4px solid rgb(172, 206, 182, 255);
+  width: 346px;
+  height: 492px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.contact-form input#name {
+  height: 35px;
+  width: 300px;
+  outline-style: solid;
+  margin-block-end: 15px;
+  margin-block-start: 4px;
+}
+
+.contact-form input#email {
+  height: 35px;
+  width: 300px;
+  outline-style: solid;
+  margin-block-end: 15px;
+  margin-block-start: 4px;
+}
+
+.contact-form input#messages {
+  height: 110px;
+  width: 300px;
+  outline-style: solid;
+  margin-block-end: 50px;
+  margin-block-start: 4px;
+}
+
+.submit-button {
+  color: #ffff;
+  border-color: #ffff;
+  background-color: rgb(172, 206, 182, 255);
+  width: 300px;
+  height: 50px;
+  padding: unset;
+}
+
+footer {
+  background-color: rgb(172, 206, 182, 255);
+  color: #ffff;
+}
+
+.copyright {
+  padding-top: 15px;
+}
+
+.socials i {
+  color: white;
+  /* border: 3px solid white;
+  border-radius: 50%; */
+}
+
+.socials {
+  padding-left: 250px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.footer .copyright {
+  flex-basis: 35%;
+}
+
+.footer .socials {
+  flex-basis: 35%;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
